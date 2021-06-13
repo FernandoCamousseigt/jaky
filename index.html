@@ -22,7 +22,7 @@
           Mini taller Jwt
         </h3>
       </div>
-      <div class="col-md-6 d-block">
+      <div id= "js-form-wrapper" class="col-md-6" style= "display: block;">
         <form id="js-form">
           <div class="form-group">
             <label for="js-input-email">Email address</label>
@@ -48,7 +48,7 @@
                     <button type="submit" class="btn btn-primary">Submit</button>
                   </form> -->
 
-      <div id="js-table-wrapper" class="col-md-12">
+      <div id="js-table-wrapper" class="col-md-12 d-block" style= "display: none">
         <table id="js-table-posts" class="table">
           <thead>
             <tr>
@@ -77,9 +77,31 @@
           </tbody>
         </table>
       </div> -->
+
+      <!-- Debemos ocultar el formulario y mostrar la tabla: -->
+   <!--    Para esto lo primero que realizaremos será añadir un
+identificador al div que encierra el formulario. 
+< div id= "js-form-wrapper" class= "col-md-6 d-block" >
+< form id= "js-form" >
+...
+</ form >
+</ div >
+
+ES DECIR EN LA LINEA 25 SE AGREGÓ: id= "js-form-wrapper"
+-->
+<!--   QUEDA COMO:    
+  <div id= "js-form-wrapper" class= "col-md-6" style= "display: block;" >
+...
+</div >
+<div id= "js-table-wrapper" class= "col-md-12" style= "display: none" >
+</div >
+      SE LE REEMPLAZÓ LO DE STYLE D-NONE Y D-NONE POR  style= "display: block;" Y style= "display: none"  -->
+
     </div>
   </div>
 
+
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
   </script>
